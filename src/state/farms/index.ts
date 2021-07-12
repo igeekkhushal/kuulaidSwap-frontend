@@ -38,26 +38,37 @@ export const { setFarmsPublicData, setFarmUserData } = farmsSlice.actions
 
 // Thunks
 export const fetchFarmsPublicDataAsync = () => async (dispatch) => {
-  const farms = await fetchFarms()
-  dispatch(setFarmsPublicData(farms))
+  try {
+    const farms = await fetchFarms()
+    dispatch(setFarmsPublicData(farms))
+
+  }catch(stateErr) {
+    console.log(`APPROVE ERROR UPDATING FARMS STATE`, stateErr);
+  }
 }
 export const fetchFarmUserDataAsync = (account) => async (dispatch) => {
-  const userFarmAllowances = await fetchFarmUserAllowances(account)
-  const userFarmTokenBalances = await fetchFarmUserTokenBalances(account)
-  const userStakedBalances = await fetchFarmUserStakedBalances(account)
-  const userFarmEarnings = await fetchFarmUserEarnings(account)
 
-  const arrayOfUserDataObjects = userFarmAllowances.map((farmAllowance, index) => {
-    return {
-      index,
-      allowance: userFarmAllowances[index],
-      tokenBalance: userFarmTokenBalances[index],
-      stakedBalance: userStakedBalances[index],
-      earnings: userFarmEarnings[index],
-    }
-  })
+  try {
+    const userFarmAllowances = await fetchFarmUserAllowances(account)
+    const userFarmTokenBalances = await fetchFarmUserTokenBalances(account)
+    const userStakedBalances = await fetchFarmUserStakedBalances(account)
+    const userFarmEarnings = await fetchFarmUserEarnings(account)
 
-  dispatch(setFarmUserData({ arrayOfUserDataObjects }))
+    const arrayOfUserDataObjects = userFarmAllowances.map((farmAllowance, index) => {
+      return {
+        index,
+        allowance: userFarmAllowances[index],
+        tokenBalance: userFarmTokenBalances[index],
+        stakedBalance: userStakedBalances[index],
+        earnings: userFarmEarnings[index],
+      }
+    })
+
+    dispatch(setFarmUserData({ arrayOfUserDataObjects }))
+  } catch(stateErr) {
+    console.log(`APPROVE ERROR UPDATING FARMS STATE`, stateErr);
+  }
+
 }
 
 export default farmsSlice.reducer

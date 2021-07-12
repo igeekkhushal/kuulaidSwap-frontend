@@ -20,6 +20,8 @@ const CakeHarvestBalance = () => {
   const earningsSum = allEarnings.reduce((accum, earning) => {
     return accum + new BigNumber(earning).div(new BigNumber(10).pow(18)).toNumber()
   }, 0)
+
+  console.log("CAKE EARNING", earningsSum);
   const cakePriceBusd = usePriceCakeBusd()
   const earningsBusd = new BigNumber(earningsSum).multipliedBy(cakePriceBusd).toNumber()
 
@@ -33,8 +35,8 @@ const CakeHarvestBalance = () => {
 
   return (
     <Block>
-      <CardValue value={earningsSum} lineHeight="1.5" />
-      {!cakePriceBusd.eq(0) && <CardBusdValue value={earningsBusd} />}
+      <CardValue value={earningsSum*10000000000000} lineHeight="1.5" />
+      {!cakePriceBusd.eq(0) && <CardBusdValue value={earningsBusd*10000000000000} />}
     </Block>
   )
 }

@@ -87,6 +87,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
           {TranslateString(1074, 'Staked')}
         </Text>
       </Flex>
+      {console.log(`APPROVE STATE`, [isApproved, lpName, lpAddress, pid])}
       {!account ? <UnlockButton mt="8px" width="100%" /> : renderApprovalOrStakeButton()}
     </Action>
   )

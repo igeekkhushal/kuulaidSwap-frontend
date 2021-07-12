@@ -9,27 +9,27 @@ const config: MenuEntry[] = [
   {
     label: 'Trade',
     icon: 'TradeIcon',
-    status: {
-      text: 'MIGRATE',
-      color: 'warning',
-    },
+    // status: {
+    //   text: 'MIGRATE',
+    //   color: 'warning',
+    // },
     items: [
-      {
-        label: 'LP Migration',
-        href: 'https://v1exchange.pancakeswap.finance/#/migrate',
-      },
+      // {
+      //   label: 'LP Migration',
+      //   href: 'https://v1exchange.pancakeswap.finance/#/migrate',
+      // },
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance',
+        href: 'https://exchange.kuulaidswap.finance',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'https://exchange.kuulaidswap.finance/#/pool',
       },
-      {
-        label: 'V1 Liquidity (Old)',
-        href: 'https://v1exchange.pancakeswap.finance/#/pool',
-      },
+      // {
+      //   label: 'V1 Liquidity (Old)',
+      //   href: 'https://v1exchange.pancakeswap.finance/#/pool',
+      // },
     ],
   },
   {
@@ -37,11 +37,11 @@ const config: MenuEntry[] = [
     icon: 'FarmIcon',
     href: '/farms',
   },
-  {
-    label: 'Pools',
-    icon: 'PoolIcon',
-    href: '/pools',
-  },
+  // {
+  //   label: 'Pools',
+  //   icon: 'PoolIcon',
+  //   href: '/pools',
+  // },
   // {
   //   label: 'Lottery',
   //   icon: 'TicketIcon',

@@ -8,15 +8,27 @@ const tokens = {
     address: {
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+      321: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
   },
-  txl: {
-    symbol: 'TXL',
+  alc: {
+    symbol: 'ALC',
     address: {
-      56: '0x1ffd0b47127fdd4097e54521c9e2c7f0d66aafc5',
-      97: '',
+      56: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
+      97: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
+      321 : '0x57f61ce6437d32cdc8e68045b5c1705d52974c19'
+    },
+    decimals: 18,
+    projectLink: 'https://tixl.org/',
+  },
+  wkcs: {
+    symbol: 'KCS',
+    address: {
+      56: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
+      97: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
+      321 : '0x4446fc4eb47f2f6586f9faab68b3498f86c07521'
     },
     decimals: 18,
     projectLink: 'https://tixl.org/',
