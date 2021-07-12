@@ -20,11 +20,11 @@ const config: MenuEntry[] = [
       // },
       {
         label: 'Exchange',
-        href: 'https://exchange.kuulaidswap.finance',
+        href: 'http://ec2-3-239-250-71.compute-1.amazonaws.com:8082/',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.kuulaidswap.finance/#/pool',
+        href: 'http://ec2-3-239-250-71.compute-1.amazonaws.com:8082/#/pool',
       },
       // {
       //   label: 'V1 Liquidity (Old)',
@@ -108,28 +108,28 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Contact',
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: '#',
       },
       {
         label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
+        href: '#',
       },
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: '#',
       },
       {
         label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
+        href: '#',
       },
-      {
-        label: 'Blog',
-        href: 'https://pancakeswap.medium.com',
-      },
-      {
-        label: 'Merch',
-        href: 'https://pancakeswap.creator-spring.com/',
-      },
+      // {
+      //   label: 'Blog',
+      //   href: '#',
+      // },
+      // {
+      //   label: 'Merch',
+      //   href: '#',
+      // },
     ],
   },
 ]

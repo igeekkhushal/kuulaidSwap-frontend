@@ -35,8 +35,8 @@ const EarnAPRCard = () => {
       .map((farm) => {
         if (farm.lpTotalInQuoteToken && prices) {
           // CHANGE BK
-          // const quoteTokenPriceUsd = prices[getAddress(farm.quoteToken.address).toLowerCase()]
-          const quoteTokenPriceUsd = 76888889000000;
+          const quoteTokenPriceUsd = prices[getAddress(farm.quoteToken.address).toLowerCase()]
+          // const quoteTokenPriceUsd = 76888889000000;
           const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(quoteTokenPriceUsd)
           console.log("FARMS APR");
           return getFarmApr(farm.poolWeight, cakePrice, totalLiquidity)
