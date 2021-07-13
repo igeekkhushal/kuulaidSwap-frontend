@@ -204,7 +204,8 @@ export const useGetApiPrices = () => {
     // code add some of our prices for now
     const addPrices = {
       "0xb6d4400e8312d13fcb03b4ed4e48b00fa1ce926a" : 100000000000000000,
-      "0x4446fc4eb47f2f6586f9faab68b3498f86c07521" : 122100000000000000
+      "0x4446fc4eb47f2f6586f9faab68b3498f86c07521" : 122100000000000000,
+      "0x70bd39ef64c09f119cf776180d2750bdc78aa9ce" : 100000000000000000
     }
 
     return {...state.prices.data, ...addPrices};

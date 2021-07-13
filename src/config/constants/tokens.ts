@@ -33,6 +33,16 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://tixl.org/',
   },
+  tst: {
+    symbol: 'TST',
+    address: {
+      56: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
+      97: '0x57f61ce6437d32cdc8e68045b5c1705d52974c19',
+      321 : '0x70bd39ef64c09f119cf776180d2750bdc78aa9ce'
+    },
+    decimals: 18,
+    projectLink: 'https://tixl.org/',
+  },
   cos: {
     symbol: 'COS',
     address: {

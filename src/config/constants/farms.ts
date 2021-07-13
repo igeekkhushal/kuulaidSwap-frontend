@@ -13,17 +13,17 @@ const farms: FarmConfig[] = [
     token: tokens.syrup,
     quoteToken: tokens.wkcs,
   },
-  // {
-  //   pid: 2,
-  //   lpSymbol: 'BUSD-BNB LP',
-  //   lpAddresses: {
-  //     97: '0x2f7682b64b88149ba3250aee32db712964de5fa9',
-  //     56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
-  //     321: '0xc94aae637f28e6643839fb9a281069cdb27957cf',
-  //   },
-  //   token: tokens.busd,
-  //   quoteToken: tokens.wbnb,
-  // },
+  {
+    pid: 2,
+    lpSymbol: 'KCS-TST',
+    lpAddresses: {
+      97: '0x2f7682b64b88149ba3250aee32db712964de5fa9',
+      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+      321: '0x62b0be23e2b8f08bad304de72f667866c1557fa0',
+    },
+    token: tokens.wkcs,
+    quoteToken: tokens.tst,
+  },
   // {
   //   pid: 139,
   //   lpSymbol: 'CAKE-BNB LP',
