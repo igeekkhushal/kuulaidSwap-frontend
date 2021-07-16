@@ -28,8 +28,8 @@ const ApyButton: React.FC<ApyButtonProps> = ({ lpLabel, cakePrice, apr, addLiqui
   }
 
   return (
-    <IconButton onClick={handleClickButton} variant="text" scale="sm" ml="4px">
-      <CalculateIcon width="18px" />
+    <IconButton  onClick={handleClickButton} variant="text" scale="sm" ml="4px">
+      <CalculateIcon color="#75b093" width="18px" />
     </IconButton>
   )
 }

@@ -54,6 +54,12 @@ const ScrollButtonContainer = styled.div`
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  button {
+    color: #536ef6;
+  }
+  svg {
+    fill: #536ef6;
+  }
 `
 
 const FarmTable: React.FC<ITableProps> = (props) => {
@@ -84,7 +90,7 @@ const FarmTable: React.FC<ITableProps> = (props) => {
         <ScrollButtonContainer>
           <Button variant="text" onClick={scrollToTop}>
             {TranslateString(999, 'To Top')}
-            <ChevronUpIcon color="primary" />
+            <ChevronUpIcon />
           </Button>
         </ScrollButtonContainer>
       </TableContainer>

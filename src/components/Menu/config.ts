@@ -5,10 +5,12 @@ const config: MenuEntry[] = [
     label: 'Home',
     icon: 'HomeIcon',
     href: '/',
+    calloutClass: "changeColorForMenu"
   },
   {
     label: 'Trade',
     icon: 'TradeIcon',
+    calloutClass: "changeColorForMenu",
     // status: {
     //   text: 'MIGRATE',
     //   color: 'warning',
@@ -36,6 +38,7 @@ const config: MenuEntry[] = [
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',
+    calloutClass: "changeColorForMenu"
   },
   // {
   //   label: 'Pools',
@@ -105,6 +108,7 @@ const config: MenuEntry[] = [
   {
     label: 'More',
     icon: 'MoreIcon',
+    calloutClass: "changeColorForMenu",
     items: [
       {
         label: 'Contact',

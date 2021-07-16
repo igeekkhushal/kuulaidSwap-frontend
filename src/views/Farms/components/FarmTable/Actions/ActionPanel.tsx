@@ -34,6 +34,10 @@ const Container = styled.div`
 
 const StyledLinkExternal = styled(LinkExternal)`
   font-weight: 400;
+  color: #536ef6;
+  svg {
+    fill: #536ef6;
+  }
 `
 
 const StakeContainer = styled.div`
@@ -99,6 +103,12 @@ const ValueWrapper = styled.div`
   margin: 4px 0px;
 `
 
+const styleForTags = {
+  color: "#75b093",
+  background: "transparent",
+  border: "2px solid #75b093",
+}
+
 const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, multiplier, liquidity }) => {
   const farm = details
 
@@ -127,8 +137,8 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, 
         <StyledLinkExternal href={bsc}>{TranslateString(999, 'View Contract')}</StyledLinkExternal>
         <StyledLinkExternal href={info}>{TranslateString(999, 'See Pair Info')}</StyledLinkExternal>
         <TagsContainer>
-          {farm.isCommunity ? <CommunityTag /> : <CoreTag />}
-          {dual ? <DualTag /> : null}
+          {farm.isCommunity ? <CommunityTag color="#75b093" style={styleForTags}/> : <CoreTag color="#75b093" style={styleForTags}/>}
+          {dual ? <DualTag color="#75b093" style={styleForTags}/> : null}
         </TagsContainer>
       </InfoContainer>
       <ValueContainer>

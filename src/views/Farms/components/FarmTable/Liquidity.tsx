@@ -6,6 +6,9 @@ import BigNumber from 'bignumber.js'
 
 const ReferenceElement = styled.div`
   display: inline-block;
+  svg {
+fill: #75b093
+  }
 `
 
 export interface LiquidityProps {
@@ -46,7 +49,7 @@ const Liquidity: React.FunctionComponent<LiquidityProps> = ({ liquidity }) => {
   return (
     <Container>
       <LiquidityWrapper>
-        <Text>{displayLiquidity}</Text>
+        <Text color="#75b093">{displayLiquidity}</Text>
       </LiquidityWrapper>
       <ReferenceElement ref={targetRef}>
         <HelpIcon color="textSubtle" />

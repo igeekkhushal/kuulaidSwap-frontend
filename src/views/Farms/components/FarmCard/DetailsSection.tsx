@@ -18,6 +18,10 @@ const Wrapper = styled.div`
 
 const StyledLinkExternal = styled(LinkExternal)`
   font-weight: 400;
+  color: #536ef6;
+  svg {
+    fill: #536ef6;
+  }
 `
 
 const DetailsSection: React.FC<ExpandableSectionProps> = ({
@@ -33,11 +37,11 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   return (
     <Wrapper>
       <Flex justifyContent="space-between">
-        <Text>{TranslateString(354, 'Total Liquidity')}:</Text>
-        <Text>{totalValueFormatted}</Text>
+        <Text color="#000000" >{TranslateString(354, 'Total Liquidity')}:</Text>
+        <Text color="#000000" >{totalValueFormatted}</Text>
       </Flex>
       {!removed && (
-        <StyledLinkExternal href={addLiquidityUrl}>
+        <StyledLinkExternal  href={addLiquidityUrl}>
           {TranslateString(999, `Get ${lpLabel}`, { name: lpLabel })}
         </StyledLinkExternal>
       )}

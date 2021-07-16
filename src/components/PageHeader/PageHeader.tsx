@@ -4,12 +4,13 @@ import { Box } from '@pancakeswap-libs/uikit'
 import Container from '../layout/Container'
 
 const Outer = styled(Box)<{ background?: string }>`
-  background: ${({ theme, background }) => background || theme.colors.gradients.bubblegum};
+  background: #ffffff;
 `
 
 const Inner = styled(Container)`
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 20px;
 `
 
 const PageHeader: React.FC<{ background?: string }> = ({ background, children, ...props }) => (
