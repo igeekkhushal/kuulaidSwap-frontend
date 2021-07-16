@@ -49,15 +49,25 @@ const ToggleWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 10px;
-
+  .kIKjqL{
+    background-color: #75b093;
+  }
+  .lfdOef{
+    background-color: #e5e5e5;
+  }
+  div input:focus{
+    outline: black;
+  }
   ${Text} {
     margin-left: 8px;
   }
+  
 `
 
 const LabelWrapper = styled.div`
   > ${Text} {
     font-size: 12px;
+    color: #000;
   }
 `
 
@@ -66,7 +76,7 @@ const FilterContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 8px 0px;
-
+  // background: #75b093;
   ${({ theme }) => theme.mediaQueries.sm} {
     width: auto;
     padding: 0;
@@ -323,10 +333,10 @@ const Farms: React.FC = () => {
   return (
     <>
       <PageHeader>
-        <Heading as="h1" size="xxl" color="secondary" mb="24px">
+        <Heading style={{color: "#75b093"}} as="h1" size="xxl" mb="24px">
           {TranslateString(674, 'Farms')}
         </Heading>
-        <Heading size="lg" color="text">
+        <Heading  style={{color: "black"}} size="lg">
           {TranslateString(999, 'Stake Liquidity Pool (LP) tokens to earn.')}
         </Heading>
       </PageHeader>
@@ -336,7 +346,7 @@ const Farms: React.FC = () => {
             <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
             <ToggleWrapper>
               <Toggle checked={stakedOnly} onChange={() => setStakedOnly(!stakedOnly)} scale="sm" />
-              <Text> {TranslateString(1116, 'Staked only')}</Text>
+              <Text color="#000"> {TranslateString(1116, 'Staked only')}</Text>
             </ToggleWrapper>
             <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} />
           </ViewControls>

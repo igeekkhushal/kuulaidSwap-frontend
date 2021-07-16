@@ -21,7 +21,7 @@ export interface AprProps {
 const Container = styled.div`
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.colors.text};
+  color: #75b093;
 
   button {
     width: 20px;
@@ -29,7 +29,7 @@ const Container = styled.div`
 
     svg {
       path {
-        fill: ${({ theme }) => theme.colors.textSubtle};
+        fill: #75b093;
       }
     }
   }

@@ -1,17 +1,19 @@
 import React from 'react'
 import { Tag, VerifiedIcon, CommunityIcon, BinanceIcon } from '@pancakeswap-libs/uikit'
 
-const CoreTag = (props) => (
-  <Tag variant="secondary" outline startIcon={<VerifiedIcon color="secondary" />} {...props}>
+const CoreTag = (props) => {
+  const {color, style} = props;
+  return (<Tag style={style} outline startIcon={<VerifiedIcon color={color || "secondary"} />} {...props}>
     Core
-  </Tag>
-)
+  </Tag>)
+}
 
-const CommunityTag = (props) => (
-  <Tag variant="textSubtle" outline startIcon={<CommunityIcon color="secondary" />} {...props}>
+const CommunityTag = (props) => {
+  const {color, style} = props;
+  return (<Tag style={style} outline startIcon={<CommunityIcon color={color || "secondary"} />} {...props}>
     Community
-  </Tag>
-)
+  </Tag>)
+}
 
 const BinanceTag = (props) => (
   <Tag variant="binance" outline startIcon={<BinanceIcon color="secondary" />} {...props}>
@@ -19,10 +21,14 @@ const BinanceTag = (props) => (
   </Tag>
 )
 
-const DualTag = (props) => (
-  <Tag variant="textSubtle" outline {...props}>
-    Dual
-  </Tag>
-)
+const DualTag = (props) => {
+  const {color, style} = props;
+  return (
+    <Tag variant="textSubtle" outline {...props}>
+      Dual
+    </Tag>
+  )
+}
+
 
 export { CoreTag, CommunityTag, BinanceTag, DualTag }

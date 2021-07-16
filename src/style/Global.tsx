@@ -13,11 +13,17 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
-
+    .KuulaidfinanceLogo{
+      width: 270px;
+    }
     img {
       height: auto;
       max-width: 100%;
     }
+  }
+  .mobile-icon image {
+    width: 30px;
+    height: 33px;
   }
 `
 

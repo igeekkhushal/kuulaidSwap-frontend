@@ -30,22 +30,25 @@ export const ActionTitles = styled.div`
 `
 
 export const Title = styled.span`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: #75b093;
 `
 
 export const Subtle = styled.span`
-  color: ${({ theme }) => theme.colors.textSubtle};
+  color: #000000;
 `
 
 export const ActionContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  button{
+    background-color: #536ef6;
+  }
 `
 export const Earned = styled.div`
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.colors.text};
+  color: #e5e5e5;
 `
 
 export const Staked = styled.div`

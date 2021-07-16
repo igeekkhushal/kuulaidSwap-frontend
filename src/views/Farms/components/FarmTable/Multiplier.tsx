@@ -5,6 +5,9 @@ import useI18n from 'hooks/useI18n'
 
 const ReferenceElement = styled.div`
   display: inline-block;
+  svg {
+    fill: #75b093;
+  }
 `
 
 export interface MultiplierProps {
@@ -12,7 +15,7 @@ export interface MultiplierProps {
 }
 
 const MultiplierWrapper = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color: #75b093;
   width: 36px;
   text-align: right;
   margin-right: 14px;

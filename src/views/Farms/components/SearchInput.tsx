@@ -6,6 +6,21 @@ import debounce from 'lodash/debounce'
 const StyledInput = styled(Input)`
   border-radius: 16px;
   margin-left: auto;
+  background-color: #e5e5e5;
+  color: #000;
+  &:focus {
+    outline: none;
+  }
+  :focus:not(:disabled){
+    box-shadow: 0px 0px 0px 1px #75b093, 0px 0px 0px 4px #75b09399;
+  }
+  ::placeholder,
+  ::-webkit-input-placeholder {
+    color: #000;
+  }
+  :-ms-input-placeholder {
+     color: #000;
+  }
 `
 
 const InputWrapper = styled.div`
